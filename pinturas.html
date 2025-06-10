@@ -41,15 +41,15 @@
       min-height: 400px;
     }
 
-    .details {
-      padding: 2rem;
-      background-color: #3a3a3a;
-      border-radius: 8px;
-      box-shadow: 0 0 10px black;
-      max-width: 600px;
-      margin: 2rem auto;
-      line-height: 1.6;
-    }
+    
+      .details {
+        flex: 1 1 350px;
+        padding: 2rem;
+        background-color: #3a3a3a;
+        border-radius: 8px;
+        box-shadow: 0 0 10px black;
+      }
+
 
     .details p {
       margin-bottom: 1rem;
@@ -76,12 +76,21 @@
       color: #ffffff;
 
     }
-    .pinturas2{
+    .pinturas2 {
       width: 400px;
       height: auto;
-      display: block;
+      border-radius: 20px;
+    }
+    .pintura-container {
       margin: auto;
-      border-radius: 50px;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -93,27 +102,27 @@
     <p>Acabamento profissional com materiais de alta qualidade.</p>
   </header>
   <br>
-  <div>
-    <img class="pinturas2" src="pinturas 2.0.jpg" alt="os serviço de pintura">
-  </div>
-
   <main>
-    <section class="details">
-      <h2>Detalhes do Serviço</h2>
-      <p><strong>Tempo estimado:</strong> 3 a 5 dias úteis</p>
-      <p><strong>Valor:</strong> A partir de R$ 800,00</p>
-      <p><strong>Descrição:</strong> Retoques localizados ou pintura completa com verniz e polimento profissional:</p>
-      <ul>
-        <li>Limpeza e desmontagem</li>
-        <li>Mascaramento e proteção</li>
-        <li>Aplicação do primer</li>
-        <li>Aplicação da tinta base</li>
-        <li>Verniz: proteção e brilho</li>
-        <li>Polimento e acabamento</li>
-        <li>Montagem de peças</li>
-      </ul>
-    </section>
+    <div class="pintura-container">
+      <img class="pinturas2" src="pinturas 2.0.jpg" alt="Imagem do serviço de pintura">
+      <section class="details">
+        <h2>Detalhes do Serviço</h2>
+        <p><strong>Tempo estimado:</strong> 3 a 5 dias úteis</p>
+        <p><strong>Valor:</strong> A partir de R$ 800,00</p>
+        <p><strong>Descrição:</strong> Retoques localizados ou pintura completa com verniz e polimento profissional:</p>
+        <ul>
+          <li>Limpeza e desmontagem</li>
+          <li>Mascaramento e proteção</li>
+          <li>Aplicação do primer</li>
+          <li>Aplicação da tinta base</li>
+          <li>Verniz: proteção e brilho</li>
+          <li>Polimento e acabamento</li>
+          <li>Montagem de peças</li>
+        </ul>
+      </section>
+    </div>
   </main>
+  
 
   <footer>
     <a href="andin.html">Voltar à página inicial</a>

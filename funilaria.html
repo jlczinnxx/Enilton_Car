@@ -43,12 +43,11 @@
     }
 
     .details {
+      flex: 1 1 350px;
       padding: 2rem;
       background-color: #3a3a3a;
       border-radius: 8px;
       box-shadow: 0 0 10px black;
-      max-width: 600px;
-      margin: 2rem auto;
     }
 
     .details p {
@@ -76,12 +75,21 @@
     #direitos {
       color: #ffffff;
     }
-    .funilaria2{
+    .funilaria2 {
       width: 325px;
       height: auto;
-      display: block;
+      border-radius: 20px;
+    }
+    .funilaria-container {
       margin: auto;
-      border-radius: 50px;
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
     }
   </style>
 </head>
@@ -93,18 +101,18 @@
     <p>Reparos com precisão e reforço da estrutura do veículo.</p>
   </header>
 <br>
-<div>
-    <img class="funilaria2" src="funilaria 4.0.jpg" alt="os serviços de funilaria">
-</div>
-
-  <main>
+<main>
+  <div class="funilaria-container">
+    <img class="funilaria2" src="funilaria 4.0.jpg" alt="Imagem dos serviços de funilaria">
     <section class="details">
       <h2>Detalhes do Serviço</h2>
       <p><strong>Tempo estimado:</strong> 2 a 4 dias úteis</p>
       <p><strong>Valor:</strong> A partir de R$ 600,00</p>
       <p><strong>Descrição:</strong> Reparos em amassados, desalinhamentos e reforço estrutural com equipamentos modernos.</p>
     </section>
-  </main>
+  </div>
+</main>
+
 
   <footer>
     <a href="andin.html">Voltar à página inicial</a>
