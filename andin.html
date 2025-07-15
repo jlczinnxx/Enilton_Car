@@ -62,13 +62,12 @@
     }
 
     .serviços-card {
-      background-color: #b00020;
-      margin: 1rem auto;
-      padding: 1rem;
-      max-width: 400px;
       border-radius: 8px;
+      background-color: #292929;
+      max-width: 350px;
       box-shadow: 0 0 10px black;
       border-left: 5px solid #8b0000;
+      flex: 1 1 300px;
     }
 
     .serviços-card h3 a {
@@ -133,42 +132,28 @@
     html {
   scroll-behavior: smooth;
 }
- .imagemlanter {
-  width: 275px;
-  height: 225px;
-  border-radius: 50px;
-  margin: 0px 35px;
- }
- .imagemfuni {
-  width: 275px;
-  height: 225px;
-  border-radius: 50px;
-  margin: 0px 35px;
-  text-align: center;
- }
- .imagempint {
-  width: 275px;
-  height: 225px;
-  border-radius: 50px;
-  margin: 0px 35px;
-  text-align: center;
- }
- .imagensdeserviços {
-  margin: auto;
-  text-align: center;
- }
- .info-extra {
-  padding: 2rem;
-  background-color: #3a3a3a;
+.serviços-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 0 10px black;
- }
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.serviços-conteineir {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
 
 
 
 
   </style>
-  <script src="script.js" defer></script>
+ 
 </head>
 <body>
   <header>
@@ -184,19 +169,7 @@
       Na Enilton Car, seu carro está em boas mãos. Trabalhamos com atenção aos detalhes, respeito ao cliente e compromisso com prazos. Seja para pequenos reparos ou grandes reformas, nossa equipe está pronta para entregar resultados impecáveis.
     </p>
 <br>    
-    
-    <div class="imagensdeserviços">
-      <a href="pinturas.html">
-        <img class="imagempint" src="imagempintura.jpg" alt="imagens do nosso serviço de pintura">
-      </a>
-      <a href="funilaria.html">
-        <img class="imagemfuni" src="imagemfunilaria.jpg" alt="imagens do nosso serviço de funilaria">
-      </a>
-      <a href="lanternagem.html">
-        <img class="imagemlanter" src="imagemlanternagem.jpg" alt="imagens do nosso serviço de lanternagem">
-      </a>
-    </div>
-    
+ 
     <div class="info-extra" style="text-align: center; color: #bdbdbd; margin-top: 1rem; padding: 1rem; background-color: #3a3a3a; border-radius: 8px;">
       <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Por que escolher a Enilton Car?</h2>
       <div>
@@ -209,22 +182,26 @@
         
 
       </div>
-
-
     </div>
-   
-
     <section class="serviços">
       <h2>Nossos Serviços</h2>
+      <div class="serviços-conteineir">
       <div class="serviços-card">
+        <img src="imagempintura.jpg">
         <h3><a href="pinturas.html">Pinturas</a></h3>
         <p>Retoques e pintura completa com acabamento profissional.</p>
       </div>
+
+
+      <div class="serviços-conteineir">
       <div class="serviços-card">
+        <img src="imagemfunilaria.jpg">
         <h3><a href="funilaria.html">Funilaria</a></h3>
         <p>Correção de amassados e estrutura com precisão.</p>
       </div>
+      <div class="serviços-conteineir">
       <div class="serviços-card">
+        <img src="imagemlanternagem.jpg">
         <h3><a href="lanternagem.html">Lanternagem</a></h3>
         <p>Ajustes em lanternas e acabamento externo.</p>
       </div>
@@ -232,6 +209,7 @@
     <div style="text-align: center; margin-top: 1rem;">
       <a href="contatoenilton.html" style="color: #ffffff; text-decoration: none; background-color: #b00020; padding: 0.5rem 1rem; border-radius: 5px; display: inline-block; transition: background-color 0.3s;">Fale Conosco</a>
     </div>
+  </div>
   </main>
 
  
